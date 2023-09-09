@@ -5,15 +5,15 @@ export default function Navbar() {
   return (
     <div className="container">
       <nav>
-        <Image src="/rupee.png" width={50} height={48} />
-        <h1>Gaming Vibes</h1>
+        <Image src="/Twicelogo.png" width={50} height={50} />
+        <h1>Once</h1>
         <ul>
-          <li><Link href="/"><a>Home</a></Link></li>
-          <li><Link href="/guides"><a>Guides</a></Link></li>
+          <li><Link href="/" legacyBehavior><a>Home</a></Link></li>
+          <li><Link href="/guides" legacyBehavior><a>Guides</a></Link></li>
         </ul>
       </nav>
       <div className="banner">
-        <Image src="/banner.png" width={966} height={276} />
+        <Image src="/Wall.jpg" width={526} height={316} sizes='100vw'/>
       </div>
     </div>
   )

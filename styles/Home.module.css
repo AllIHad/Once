@@ -4,3 +4,11 @@
   letter-spacing: 1px;
   line-height: 1.6em;
 }
+
+.home h2 {
+  text-align: center;
+}
+
+.container img {
+  color: white;
+}

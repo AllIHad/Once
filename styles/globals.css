@@ -51,7 +51,14 @@ nav li.btn:hover {
   background: var(--primary);
 }
 
-/* banner */
+/* Banner and logo img*/
 .banner img {
   border-radius: 6px;
+  margin: auto;
+  display: block;
+  align-items: center;
+}
+
+.container img{
+  align-items: center;
 }
