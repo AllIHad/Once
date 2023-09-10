@@ -16,7 +16,6 @@ export default function Navbar() {
         <ul>
           <li><Link href="/" legacyBehavior><a>Home</a></Link></li>
           <li><Link href="/guides" legacyBehavior><a>Guides</a></Link></li>
-          <p>{}</p>
           <li onClick={login} className='btn'>Login/Signup</li>
           <li onClick={logout} className='btn'>Logout</li>
         </ul>
