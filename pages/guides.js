@@ -26,7 +26,7 @@ export default function Guides() {
           setError(null)
         })
         .catch(err => {
-          setError(err.message)
+          setError('You must login to be able to see the content')
           setGuides(null)
         })
     }
