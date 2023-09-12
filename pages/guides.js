@@ -3,7 +3,7 @@ import styles from '../styles/Guides.module.css'
 import authContext from '../stores/authContext'
 
 export default function Guides() {
-  const { user, authReady } = useContext(authContext)
+  const { user, authReady, login } = useContext(authContext)
   const { guides, setGuides } = useState(null)
   const { error, setError } = useState(null)
 
@@ -16,6 +16,7 @@ export default function Guides() {
       })
         .then(res => {
           if (!res.ok) {
+            login()
             throw Error('You must login to be able to see the content')
           }
           return res.json()
