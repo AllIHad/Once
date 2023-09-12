@@ -22,11 +22,11 @@ export default function Guides() {
           return res.json()
         })
         .then(data => {
-          setGuides(data)
           setError(null)
+          setGuides(data)
         })
         .catch(err => {
-          setError('You must login to be able to see the content')
+          setError(err.message)
           setGuides(null)
         })
     }
